@@ -1,0 +1,22 @@
+<footer>
+<div class="container__footer">
+    <ul>
+        <ol>¿Quienes Somos?</ol>
+        <ol>Trabaja Con Nosotros</ol>
+        <ol>Contactanos</ol>
+    </ul>
+    <ul>
+        <ol> <h3>Siguenos En :</h3> </ol>
+        <ol>Facebook</ol>
+        <ol>Instagram</ol>
+        <ol>Twitter</ol>
+    </ul>
+    <ul class="container__contact">
+        <ol><h3>Escribenos</h3></ol>
+        <mat-form-field>
+            <input matInput placeholder="Digite su correo" [formControl]="emailField" type="email">
+        </mat-form-field>
+        <button mat-raised-button [disabled]="emailField.invalid" (click)="sendMail()">Enviar</button>
+    </ul>
+</div>
+</footer>

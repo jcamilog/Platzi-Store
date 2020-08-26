@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title> Ingresa tu información </mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="($event)">
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input placeholder="Nombre" matInput formControlName="name" type="text">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input placeholder="Correo" matInput formControlName="email" type="email">
+                        <mat-error>Este correo no es valido, <br> Ej: ejemplo@ejemplo.com</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <input placeholder="Celular" matInput formControlName="number" type="number">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <mat-form-field>
+                        <textarea placeholder="Motivo" matInput formControlName="motive"> </textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs">
+                    <button [disabled]="form.invalid" mat-raised-button> Enviar </button>
+                </div>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

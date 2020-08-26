@@ -1,0 +1,14 @@
+mat-toolbar{
+    margin-bottom: 30px;
+}
+nav a {
+    padding: 5px;
+    text-decoration: none;
+}
+nav a.active {
+    background-color: blue;
+    color: white;
+}
+.header__row{
+    width: 100%;
+}
